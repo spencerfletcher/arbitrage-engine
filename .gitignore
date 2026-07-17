@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Environment / secrets — never commit real venue credentials
+.env
+*.key
+*.pem
+
+# Runtime data
+logs/
+acks/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Private overlays (operational data kept out of the public snapshot)
+bot/kalshi/_private_pairs.py
+bot/core/_private_teams.py
+bot/**/_private_*.py
+
+# Runtime state (never commit live positions/cooldowns)
+bot/bot_state.json

@@ -8,6 +8,19 @@ A real-time engine that detects and executes cross-venue arbitrage between two p
 
 ---
 
+## What this became
+
+The measurement apparatus below reached a structural conclusion, not a tuning failure: **the
+catchable edges were the ones that weren't real.** Edges that survived long enough to be taken were
+the ones a stale feed had invented; the genuinely mispriced ones were gone inside the round-trip.
+Speed was the wall, and it was not crossable without colocation.
+
+If you cannot win the race to take, stop racing and get paid to wait. The successor —
+[`prediction-market-maker`](https://github.com/spencerfletcher/prediction-market-maker) — is built on
+that conclusion: two market-making engines for the same two venues, organised around resting when
+the market arrives and surviving being wrong about what you are holding. Different problem, and the
+reason this repository's instrument exists.
+
 ## The idea in one paragraph
 
 Two exchanges list the same real-world event – for example, a baseball game. Kalshi prices *"Team A wins"* at \$0.55; Polymarket prices *"Team B wins"* at \$0.40. Buy both for **\$0.95**. Exactly one outcome must occur, and the winner pays \$1.00, so you keep the **5¢ spread regardless of who wins**. This is a locked profit, not a prediction. The strategy is easy to state. Everything hard and interesting about this project is that each step of *finding* such a spread can lie to you: a stale quote invents an edge that isn't there, a name collision hedges the wrong game, trading venues can change their fees without notice, and a "guaranteed" profit can strand one leg and become a directional bet. The engineering is the apparatus built to catch those inaccuracies before any real money moves.

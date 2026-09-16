@@ -16,7 +16,7 @@ the ones a stale feed had invented; the genuinely mispriced ones were gone insid
 Speed was the wall, and it was not crossable without colocation.
 
 If you cannot win the race to take, stop racing and get paid to wait. The successor —
-[`prediction-market-maker`](https://github.com/spencerfletcher/prediction-market-maker) — is built on
+[`market-maker`](https://github.com/spencerfletcher/market-maker) — is built on
 that conclusion: two market-making engines for the same two venues, organised around resting when
 the market arrives and surviving being wrong about what you are holding. Different problem, and the
 reason this repository's instrument exists.

@@ -1,6 +1,6 @@
 # Cross-Venue Arbitrage Engine
 
-A real-time engine that detects and executes cross-venue arbitrage between two prediction-market exchanges – **Kalshi** and **Polymarket US** – over concurrent WebSocket feeds.
+A real-time engine that detects and executes cross-venue arbitrage between two prediction-market exchanges – **Kalshi** and **Polymarket US** – over concurrent WebSocket feeds. Public snapshot of a private working repo; commit history is squashed and market selection, tuning, and results are withheld.
 
 > **Status: Pre-Live, by design**
 >
